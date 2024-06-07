@@ -1,0 +1,17 @@
+name: kuzu
+version: 0.1.0
+
+authors:
+  - Jamie Gaskins <jgaskins@hey.com>
+
+dependencies:
+  db:
+    github: crystal-lang/crystal-db
+
+development_dependencies:
+  kuzu:
+    path: .
+
+crystal: '>= 1.12.1'
+
+license: MIT
