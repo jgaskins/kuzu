@@ -251,7 +251,7 @@ def Tuple.from_kuzu_tuple(kuzu_tuple : LibKuzu::FlatTuple*)
               raise ArgumentError.new("Could not get tuple")
             end
           ensure
-            GC.free pointerof(%raw{index})
+            LibC.free pointerof(%raw{index}).as(Void*)
           end
         end,
       {% end %}
